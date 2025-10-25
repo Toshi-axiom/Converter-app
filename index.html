@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter-app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body class = "light_mode">
+    <main>
+        <nav class ="nav_bar">
+            <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            </div>
+            <button id="theme-toggle" title="Toggle Light/Dark Mode">Light/Dark Mode</button>
+        </nav>
+        <h1>Converter App</h1>
+        <div class = "nav">
+            <button id = "temp">Temperature</button>
+            <button id = "curr">Currency</button>
+        </div>
+        <section id = "temp_panel" class = "panel">
+            <h2>Temperature Converter</h2>
+            <select id="from_temp">
+                <option value = "celsius">Celsius</option>
+                <option value = "fahrenheit">Fahrenheit</option>
+                <option value = "kelvin">Kelvin</option>
+            </select>
+            <input type = "number" id = "temp_input" placeholder="Enter value">
+            <select id = "to_temp">
+                <option value = "celsius">Celsius</option>
+                <option value = "fahrenheit">Fahrenheit</option>
+                <option value = "kelvin">Kelvin</option>
+            </select>
+            <button id = "temp_con">Convert</button>
+            <button id = "temp_reset">Reset</button>
+            <div id = "temp_result"></div>
+        </section>
+        <section id = "curr_panel" class = "panel" style ="display: none;">
+            <h2>Currency Converter</h2>
+            <select id = "from_curr">
+                <option value = "usd">USD</option>
+                <option value ="inr">INR</option>
+                <option value = "eur">EUR</option>
+            </select>
+            <input id = "curr_input" type = "number" placeholder="Enter amount">
+            <select id = "to_curr">
+                <option value = "usd">USD</option>
+                <option value ="inr">INR</option>
+                <option value = "eur">EUR</option>
+            </select>
+            <button id = "curr_con">Convert</button>
+            <button id = "curr_reset">Reset</button>
+            <div id = "curr_result"></div>
+
+        </section>
+    </main>
+    <script src = "script.js"></script>
+</body>
+</html>
