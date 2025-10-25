@@ -149,7 +149,7 @@ button:hover{
     border-radius: 10px;
     padding: 12px;
     color: #2B1B2F;
-    box-shadow: inset rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
 }
 body.dark_mode {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
